@@ -33,3 +33,6 @@
 ## Correções
 - [x] Corrigir cor do botão "Veja Meu LinkedIn" (aparece branco)
 
+
+- [x] Corrigir texto do botão LinkedIn - deve estar sempre visível (não apenas no hover)
+

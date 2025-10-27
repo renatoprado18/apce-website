@@ -90,8 +90,7 @@ export default function Home() {
             </Button>
             <Button 
               size="lg" 
-              variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+              className="bg-white text-primary hover:bg-white/90 border-2 border-white text-lg px-8 py-6"
               asChild
             >
               <a href="https://www.linkedin.com/in/renatoaprado/" target="_blank" rel="noopener noreferrer">
