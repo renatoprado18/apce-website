@@ -36,3 +36,6 @@
 
 - [x] Corrigir texto do botão LinkedIn - deve estar sempre visível (não apenas no hover)
 
+
+- [x] Corrigir link da 10XMentorAI para https://10xmentor.ai/
+
