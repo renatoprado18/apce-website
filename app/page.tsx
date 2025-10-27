@@ -146,7 +146,7 @@ export default function Home() {
             </Link>
 
             <a href="https://10xmentor.ai/" target="_blank" rel="noopener noreferrer">
-              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full bg-gradient-to-br from-primary/5 to-accent/5">
+              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full">
                 <CardHeader>
                   <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Brain className="h-8 w-8 text-primary" />

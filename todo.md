@@ -39,3 +39,6 @@
 
 - [x] Corrigir link da 10XMentorAI para https://10xmentor.ai/
 
+
+- [x] Ajustar cor do card 10XMentorAI para ser igual aos outros 3 cards
+
