@@ -42,3 +42,6 @@
 
 - [x] Ajustar cor do card 10XMentorAI para ser igual aos outros 3 cards
 
+
+- [x] Substituir logo da NeoGovernança quebrado pelo arquivo correto
+
