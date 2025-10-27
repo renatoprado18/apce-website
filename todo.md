@@ -28,3 +28,8 @@
 - [x] Adicionar logo no header/navbar de todas as páginas
 - [x] Adicionar logo NeoGovernança na página NeoGovernança
 
+
+
+## Correções
+- [x] Corrigir cor do botão "Veja Meu LinkedIn" (aparece branco)
+
