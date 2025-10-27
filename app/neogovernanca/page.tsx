@@ -35,7 +35,7 @@ export default function NeoGovernanca() {
           </Link>
           <div className="flex flex-col items-center mb-8">
             <img 
-              src="/images/neogovernanca-symbol.webp" 
+              src="/images/logo-neogovernanca.png" 
               alt="Logo NeoGovernança" 
               className="w-32 h-32 mb-6"
             />
