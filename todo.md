@@ -45,3 +45,6 @@
 
 - [x] Substituir logo da NeoGovernança quebrado pelo arquivo correto
 
+
+- [x] Corrigir texto sumindo ao rolar no mobile
+
