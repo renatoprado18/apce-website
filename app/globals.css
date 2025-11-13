@@ -44,35 +44,35 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* PALETA 3: VINHO/BORGONHA + CINZA CARVÃO (Sofisticado Corporativo) */
+/* PALETA 1: AZUL MARINHO + DOURADO (Executivo Premium) */
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.98 0.005 0);
-  --foreground: oklch(0.25 0.02 0);
+  --background: oklch(0.98 0.005 250);
+  --foreground: oklch(0.25 0.02 250);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 0);
+  --card-foreground: oklch(0.25 0.02 250);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 0);
+  --popover-foreground: oklch(0.25 0.02 250);
   
-  /* Vinho profundo como cor primária */
-  --primary: oklch(0.35 0.10 15); /* #6b2737 - vinho/borgonha */
+  /* Azul Marinho Profundo como cor primária */
+  --primary: oklch(0.35 0.08 250); /* #1e3a5f - azul marinho */
   --primary-foreground: oklch(0.98 0 0);
   
-  /* Cinza carvão como secundário */
-  --secondary: oklch(0.32 0.01 250); /* #2d3748 - cinza carvão */
+  /* Cinza azulado escuro como secundário */
+  --secondary: oklch(0.45 0.04 250); /* cinza azulado */
   --secondary-foreground: oklch(0.98 0 0);
   
-  --muted: oklch(0.96 0.005 0);
-  --muted-foreground: oklch(0.55 0.02 0);
+  --muted: oklch(0.96 0.005 250);
+  --muted-foreground: oklch(0.55 0.02 250);
   
-  /* Dourado como acento */
-  --accent: oklch(0.70 0.10 75); /* #d4a574 - dourado */
-  --accent-foreground: oklch(0.15 0.02 0);
+  /* Dourado/Bronze como acento */
+  --accent: oklch(0.65 0.12 85); /* #c49a3c - dourado */
+  --accent-foreground: oklch(0.15 0.02 250);
   
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.005 0);
-  --input: oklch(0.92 0.005 0);
-  --ring: oklch(0.35 0.10 15);
+  --border: oklch(0.92 0.005 250);
+  --input: oklch(0.92 0.005 250);
+  --ring: oklch(0.35 0.08 250);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
