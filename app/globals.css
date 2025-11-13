@@ -44,35 +44,35 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* PALETA 2: VERDE-AZULADO PROFUNDO (Inovação/Sustentabilidade) */
+/* PALETA 3: VINHO/BORGONHA + CINZA CARVÃO (Sofisticado Corporativo) */
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.98 0.005 180);
-  --foreground: oklch(0.25 0.02 180);
+  --background: oklch(0.98 0.005 0);
+  --foreground: oklch(0.25 0.02 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 180);
+  --card-foreground: oklch(0.25 0.02 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 180);
+  --popover-foreground: oklch(0.25 0.02 0);
   
-  /* Teal escuro como cor primária */
-  --primary: oklch(0.38 0.08 200); /* #0d4f4f - teal profundo */
+  /* Vinho profundo como cor primária */
+  --primary: oklch(0.35 0.10 15); /* #6b2737 - vinho/borgonha */
   --primary-foreground: oklch(0.98 0 0);
   
-  /* Verde-oliva como secundário */
-  --secondary: oklch(0.48 0.06 120); /* #5a6b3f - verde-oliva */
+  /* Cinza carvão como secundário */
+  --secondary: oklch(0.32 0.01 250); /* #2d3748 - cinza carvão */
   --secondary-foreground: oklch(0.98 0 0);
   
-  --muted: oklch(0.96 0.005 180);
-  --muted-foreground: oklch(0.55 0.02 180);
+  --muted: oklch(0.96 0.005 0);
+  --muted-foreground: oklch(0.55 0.02 0);
   
-  /* Dourado suave como acento */
-  --accent: oklch(0.68 0.10 80); /* #b8945f - dourado suave */
-  --accent-foreground: oklch(0.15 0.02 180);
+  /* Dourado como acento */
+  --accent: oklch(0.70 0.10 75); /* #d4a574 - dourado */
+  --accent-foreground: oklch(0.15 0.02 0);
   
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.005 180);
-  --input: oklch(0.92 0.005 180);
-  --ring: oklch(0.38 0.08 200);
+  --border: oklch(0.92 0.005 0);
+  --input: oklch(0.92 0.005 0);
+  --ring: oklch(0.35 0.10 15);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
