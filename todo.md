@@ -135,3 +135,11 @@
 - [x] Manter design premium consistente
 
 
+
+
+## Adicionar Depoimento Marco Carvalho
+- [x] Adicionar depoimento de Marco [MAC] Carvalho (Federação ASSESPRO-SP) à seção de depoimentos
+- [x] Ajustar layout para 4 depoimentos (grid 2x2 responsivo)
+- [x] Manter design premium consistente
+
+
