@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header/Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm elevation-2">
         <div className="container px-4 py-4 flex items-center justify-between">
           <Link href="/">
             <img src="/images/logo-ap.png" alt="Almeida Prado Conselhos Empresariais" className="h-12 w-auto" />
@@ -68,21 +68,21 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00em0wIDI0YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00ek0xMiAyOGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHptMjQgMGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHptMjQgMGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
         
         <div className="container relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
             Renato de Faria e Almeida Prado
           </h1>
-          <p className="text-xl md:text-2xl mb-8 font-light max-w-4xl mx-auto animate-fade-in animation-delay-200">
+          <p className="text-xl md:text-2xl mb-8 font-light max-w-4xl mx-auto animate-fade-in-up animation-delay-200">
             Conselheiro do Futuro, Estrategista, AI Thinker, Co-fundador e Mentor da 10XMentorAI
           </p>
-          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400">
+          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-400">
             Com quase 30 anos de trajetória em conselhos, inovação e liderança com propósito, 
             combino inteligência artificial generativa com décadas de experiência em alta gestão 
             para preparar líderes a crescerem com sustentabilidade, humanidade e inteligência.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-600">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
+              className="bg-white text-primary hover:bg-white/90 hover-lift elevation-2 text-lg px-8 py-6 font-semibold"
               onClick={scrollToContact}
             >
               Agende uma Conversa
@@ -110,10 +110,10 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Link href="/neogovernanca">
-              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
-                  <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Shield className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Shield className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
                   </div>
                   <CardTitle className="text-xl">NeoGovernança</CardTitle>
                   <CardDescription>Descubra a filosofia que une progresso, conexão e harmonia</CardDescription>
@@ -122,10 +122,10 @@ export default function Home() {
             </Link>
 
             <Link href="/cases">
-              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
-                  <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                    <Briefcase className="h-8 w-8 text-accent" />
+                  <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                    <Briefcase className="h-9 w-9 text-accent group-hover:scale-110 transition-transform" />
                   </div>
                   <CardTitle className="text-xl">Cases de Sucesso</CardTitle>
                   <CardDescription>Conheça histórias de transformação e impacto</CardDescription>
@@ -134,10 +134,10 @@ export default function Home() {
             </Link>
 
             <Link href="/blog">
-              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
-                  <div className="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Award className="h-8 w-8 text-secondary" />
+                  <div className="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+                    <Award className="h-9 w-9 text-secondary group-hover:scale-110 transition-transform" />
                   </div>
                   <CardTitle className="text-xl">Blog</CardTitle>
                   <CardDescription>Reflexões sobre governança, estratégia e inovação</CardDescription>
@@ -146,10 +146,10 @@ export default function Home() {
             </Link>
 
             <a href="https://10xmentor.ai/" target="_blank" rel="noopener noreferrer">
-              <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 cursor-pointer h-full">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
-                  <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Brain className="h-8 w-8 text-primary" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Brain className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
                   </div>
                   <CardTitle className="text-xl">10XMentorAI</CardTitle>
                   <CardDescription>Mentoria com IA para alta liderança</CardDescription>
@@ -169,7 +169,7 @@ export default function Home() {
                 <img 
                   src="/images/renato-photo.jpg" 
                   alt="Renato de Faria e Almeida Prado" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="rounded-2xl elevation-4 w-full hover-scale"
                 />
               </div>
               <div className="order-1 md:order-2 text-center md:text-left">
@@ -181,7 +181,7 @@ export default function Home() {
               A tecnologia existe. O que falta é sabedoria aplicada. É isso que construímos na <strong className="text-primary">10XMentorAI</strong>: 
               mentoria contínua, personalizada e estratégica para líderes, com agentes treinados para conversar na linguagem do boardroom.
             </p>
-            <blockquote className="text-2xl md:text-3xl font-light italic text-primary border-l-4 border-primary pl-6 my-12">
+            <blockquote className="text-2xl md:text-3xl font-light italic text-primary border-l-4 border-accent pl-6 my-12 bg-accent/5 py-6 rounded-r-lg">
               &ldquo;a verdadeira inovação surge quando tecnologia e humanidade trabalham em harmonia&rdquo;
             </blockquote>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -201,10 +201,10 @@ export default function Home() {
             Valor Agregado
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2">
+            <Card className="hover-lift elevation-2 border-2 group">
               <CardHeader>
-                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Brain className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Brain className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
                 </div>
                 <CardTitle className="text-xl">IA na Alta Liderança</CardTitle>
               </CardHeader>
@@ -217,10 +217,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2">
+            <Card className="hover-lift elevation-2 border-2 group">
               <CardHeader>
-                <div className="w-14 h-14 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <TrendingUp className="h-8 w-8 text-accent" />
+                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                  <TrendingUp className="h-9 w-9 text-accent group-hover:scale-110 transition-transform" />
                 </div>
                 <CardTitle className="text-xl">Estratégia Empresarial</CardTitle>
               </CardHeader>
@@ -233,10 +233,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2">
+            <Card className="hover-lift elevation-2 border-2 group">
               <CardHeader>
-                <div className="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-8 w-8 text-secondary" />
+                <div className="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+                  <Shield className="h-9 w-9 text-secondary group-hover:scale-110 transition-transform" />
                 </div>
                 <CardTitle className="text-xl">Governança</CardTitle>
               </CardHeader>
@@ -249,10 +249,10 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2">
+            <Card className="hover-lift elevation-2 border-2 group">
               <CardHeader>
-                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Heart className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Heart className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
                 </div>
                 <CardTitle className="text-xl">ESG & Impacto</CardTitle>
               </CardHeader>
