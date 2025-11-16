@@ -184,3 +184,12 @@
 - [x] Verificar consistência visual em todas as seções
 
 
+
+
+## Aplicar Paleta do PDF - Verde Petróleo/Teal
+- [x] Aplicar esquema de cores do PDF fornecido pelo usuário
+- [x] Cores: Verde Petróleo #0D5959 (primária), Cinza Claro #F5F5F5 (secundária), Verde Teal #0D7373 (acento)
+- [x] Atualizar variáveis CSS em app/globals.css
+- [x] Verificar consistência visual em todas as seções
+
+
