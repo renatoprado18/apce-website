@@ -127,3 +127,11 @@
 - [x] Tornar seção responsiva
 
 
+
+
+## Adicionar Depoimento Thalita Mendes
+- [x] Adicionar depoimento de Thalita Mendes (Vallen Clinic) à seção de depoimentos
+- [x] Ajustar layout para 3 depoimentos (grid responsivo)
+- [x] Manter design premium consistente
+
+
