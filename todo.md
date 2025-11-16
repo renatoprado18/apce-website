@@ -159,3 +159,11 @@
 - [x] Manter design premium consistente
 
 
+
+
+## Alterar Frase sobre Trajetória
+- [x] Substituir frase adicionando "empreendedora, participação em conselhos"
+- [x] Frase antiga: "Com quase 30 anos de trajetória em conselhos, inovação e liderança..."
+- [x] Frase nova: "Com quase 30 anos de trajetória empreendedora, participação em conselhos, inovação e liderança..."
+
+
