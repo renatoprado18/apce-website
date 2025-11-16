@@ -72,7 +72,7 @@ export default function Home() {
             Renato de Faria e Almeida Prado
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light max-w-4xl mx-auto animate-fade-in-up animation-delay-200">
-            Conselheiro do Futuro, Estrategista, AI Thinker, Co-fundador e Mentor da 10XMentorAI
+            Conselheiro do Futuro, Estrategista, AI Thinker, Cofundador 10XMentorAI & imensIAH
           </p>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-400">
             Com quase 30 anos de trajetória em conselhos, inovação e liderança com propósito, 
@@ -108,7 +108,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
             Explore Mais
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
             <Link href="/neogovernanca">
               <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
@@ -156,6 +156,18 @@ export default function Home() {
                 </CardHeader>
               </Card>
             </a>
+
+            <a href="https://www.imensiah.com.br" target="_blank" rel="noopener noreferrer">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
+                <CardHeader>
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+                    <img src="/images/logo-imensiah.webp" alt="imensIAH" className="w-full h-full object-contain group-hover:scale-110 transition-transform" />
+                  </div>
+                  <CardTitle className="text-xl">imensIAH</CardTitle>
+                  <CardDescription>Inteligência Estratégica com IA + IH</CardDescription>
+                </CardHeader>
+              </Card>
+            </a>
           </div>
         </div>
       </section>
@@ -184,9 +196,15 @@ export default function Home() {
             <blockquote className="text-2xl md:text-3xl font-light italic text-primary border-l-4 border-accent pl-6 my-12 bg-accent/5 py-6 rounded-r-lg">
               &ldquo;a verdadeira inovação surge quando tecnologia e humanidade trabalham em harmonia&rdquo;
             </blockquote>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Com esta iniciativa, complemento minha atuação em conselhos do futuro, preparando a alta liderança 
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+              Com a <strong className="text-primary">10XMentorAI</strong>, complemento minha atuação em conselhos do futuro, preparando a alta liderança 
               para exponencializar seus resultados através da Inteligência Artificial.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Já na <strong className="text-accent">imensIAH.com.br</strong>, plataforma que cofundei, unimos o melhor da IA com a profundidade da Inteligência Humana. 
+              Oferecemos diagnósticos estratégicos completos — análise SWOT, insights PESTEL e recomendações prioritárias com OKRs — 
+              transformando dados empresariais em decisões que realmente fazem a diferença. Uma extensão natural da minha atuação como Conselheiro do Futuro, 
+              aplicando IA com sabedoria estratégica.
             </p>
               </div>
             </div>
@@ -211,8 +229,9 @@ export default function Home() {
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Pioneiro em IA para Governança no Brasil</li>
-                  <li>• Fundador da 10XMentorAI</li>
+                  <li>• Cofundador da 10XMentorAI & imensIAH</li>
                   <li>• AI Board Advisory para empresas</li>
+                  <li>• Diagnósticos estratégicos com IA + IH</li>
                 </ul>
               </CardContent>
             </Card>
