@@ -109,3 +109,21 @@
 - [x] Incluir imensIAH na seção "Propósito & Visão"
 - [x] Adicionar imensIAH nos cards de Valor Agregado
 
+
+
+## Paletas de Cores Testadas
+- [x] Opção 1: Executivo Premium (Azul Marinho #1E3A5F + Dourado #C49A3C) - **APLICADA**
+- [x] Opção 2: Inovação Sustentável (Verde Esmeralda #2C5F4A + Coral #E67E50)
+- [x] Opção 3: Sofisticada Corporativa (Vinho #6B2737 + Dourado #D4A57A)
+
+
+
+
+## Seção de Depoimentos
+- [x] Extrair depoimentos do site imensIAH.com.br
+- [x] Criar seção de depoimentos no website
+- [x] Implementar design premium consistente com elevation e hover effects
+- [x] Adicionar fotos/avatares dos depoentes (se disponíveis)
+- [x] Tornar seção responsiva
+
+
