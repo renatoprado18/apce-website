@@ -49,10 +49,10 @@
 - [x] Corrigir texto sumindo ao rolar no mobile
 
 
-- [x] Aplicar Opção 1 - Executivo Premium (#1E3A5F, #C49A3C, #4A5568) - PALETA FINAL ESCOLHIDA
+- [x] Aplicar Opção 1 - Executivo Premium (#1E3A5F, #C49A3C, #4A5568)
 
 
-- [x] Aplicar Opção 2 - Inovação Sustentável (#0D4F4F, #5A6B3F, #86915F)
+- [x] Aplicar Opção 2 - Inovação Sustentável (#0D4F4F, #5A6B3F, #86915F) - PALETA FINAL ESCOLHIDA
 
 
 - [x] Aplicar Opção 3 - Sofisticada Corporativa (#6B2737, #2D3748, #D4A57A)
