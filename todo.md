@@ -48,3 +48,9 @@
 
 - [x] Corrigir texto sumindo ao rolar no mobile
 
+
+- [ ] Aplicar Opção 1 - Executivo Premium (#1E3A5F, #C49A3C, #4A5568)
+
+
+- [x] Aplicar Opção 2 - Inovação Sustentável (#0D4F4F, #5A6B3F, #86915F)
+
