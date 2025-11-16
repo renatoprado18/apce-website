@@ -202,3 +202,12 @@
 - [x] Verificar consistência visual em todas as seções
 
 
+
+
+## Adicionar Link de WhatsApp
+- [x] Adicionar botão flutuante de WhatsApp no canto inferior direito
+- [x] Número: +55 11 98415-3337
+- [x] Integrar link de WhatsApp na seção de contato
+- [x] Adicionar ícone e animação hover premium
+
+
