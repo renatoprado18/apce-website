@@ -451,7 +451,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="text-lg mb-6 text-foreground leading-relaxed italic">
-                  "Renato alia expertise em conselhos com IA estratégica — impulsionando o futuro da governança das empresas com clareza e impacto. Recomendo."
+                  &ldquo;Renato alia expertise em conselhos com IA estratégica — impulsionando o futuro da governança das empresas com clareza e impacto. Recomendo.&rdquo;
                 </p>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -475,7 +475,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <p className="text-lg mb-6 text-foreground leading-relaxed italic">
-                  "Renato combina profunda experiência com IA aplicada à estratégia — transformando decisões da Associação Despertar. Clareza, ritmo e resultados. Recomendo com convicção."
+                  &ldquo;Renato combina profunda experiência com IA aplicada à estratégia — transformando decisões da Associação Despertar. Clareza, ritmo e resultados. Recomendo com convicção.&rdquo;
                 </p>
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
