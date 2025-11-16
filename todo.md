@@ -54,3 +54,6 @@
 
 - [x] Aplicar Opção 2 - Inovação Sustentável (#0D4F4F, #5A6B3F, #86915F)
 
+
+- [x] Aplicar Opção 3 - Sofisticada Corporativa (#6B2737, #2D3748, #D4A57A)
+
