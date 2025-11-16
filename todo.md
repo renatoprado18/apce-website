@@ -167,3 +167,11 @@
 - [x] Frase nova: "Com quase 30 anos de trajetória empreendedora, participação em conselhos, inovação e liderança..."
 
 
+
+
+## Atualizar Frase - Adicionar "aconselhar empresas"
+- [x] Adicionar "e aconselhar empresas" após "preparar líderes"
+- [x] Frase antiga: "...para preparar líderes a crescerem..."
+- [x] Frase nova: "...para preparar líderes e aconselhar empresas a crescerem..."
+
+

@@ -77,7 +77,7 @@ export default function Home() {
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-400">
             Com quase 30 anos de trajetória empreendedora, participação em conselhos, inovação e liderança com propósito, 
             combino inteligência artificial generativa com décadas de experiência em alta gestão 
-            para preparar líderes a crescerem com sustentabilidade, humanidade e inteligência.
+            para preparar líderes e aconselhar empresas a crescerem com sustentabilidade, humanidade e inteligência.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
             <Button 
