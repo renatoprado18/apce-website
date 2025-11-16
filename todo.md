@@ -1,59 +1,58 @@
 # Project TODO
 
-## Migração para Next.js
-- [x] Recriar projeto com Next.js, React e Tailwind CSS
-- [x] Migrar todas as páginas (Home, Blog, Cases, NeoGovernança)
-- [x] Migrar componentes e estilos
-- [x] Configurar roteamento do Next.js
-- [x] Testar todas as funcionalidades
+## Redesign UX/UI Premium - Best in Class
 
-## Features Implementadas
-- [x] Design system azul profissional com fonte Inter
-- [x] Página Home completa com todas as seções
-- [x] Área de Blog com 33 artigos do LinkedIn
-- [x] Área de Cases (Muji, Santo Grau, Carambola)
-- [x] Seção sobre NeoGovernança
-- [x] Referência à 10XMentorAI
-- [x] Navegação entre páginas
-- [x] Animações e transições
-- [x] Responsividade mobile/tablet/desktop
+### Tipografia e Hierarquia Visual
+- [ ] Implementar escala tipográfica profissional (display, heading, body)
+- [ ] Adicionar font weights variados para hierarquia
+- [ ] Melhorar line-height e letter-spacing
 
+### Hero Section Premium
+- [ ] Redesenhar hero com layout assimétrico impactante
+- [ ] Adicionar gradiente sofisticado no background
+- [ ] Melhorar CTAs com micro-animações
+- [ ] Adicionar scroll indicator animado
 
+### Cards e Componentes
+- [ ] Implementar elevation system (sombras em camadas)
+- [ ] Adicionar hover effects premium em todos cards
+- [ ] Glassmorphism nos cards de destaque
+- [ ] Borders e corners refinados
 
-## Adicionar Imagens
-- [x] Copiar foto profissional para public/images
-- [x] Copiar logo Almeida Prado para public/images
-- [x] Extrair logo NeoGovernança do PDF
-- [x] Adicionar foto na seção Sobre
-- [x] Adicionar logo no header/navbar de todas as páginas
-- [x] Adicionar logo NeoGovernança na página NeoGovernança
+### Animações e Micro-interações
+- [ ] Smooth scroll behavior
+- [ ] Fade-in progressivo nas seções
+- [ ] Hover animations nos botões
+- [ ] Transition effects nos links
+- [ ] Loading states visuais
 
+### Timeline e Experiência
+- [ ] Redesenhar timeline com visual moderno
+- [ ] Adicionar ícones nas experiências
+- [ ] Melhorar espaçamento e respiração
 
+### Tags e Badges
+- [ ] Redesenhar tags de habilidades com estilo premium
+- [ ] Adicionar hover effects
+- [ ] Agrupar por categoria visualmente
 
-## Correções
-- [x] Corrigir cor do botão "Veja Meu LinkedIn" (aparece branco)
+### Seção de Contato
+- [ ] Redesenhar CTA final com impacto
+- [ ] Melhorar ícones e espaçamento
+- [ ] Adicionar efeitos de hover nos cards de contato
 
+### Responsividade Premium
+- [ ] Otimizar breakpoints
+- [ ] Touch targets adequados (min 44px)
+- [ ] Gestos naturais no mobile
 
-- [x] Corrigir texto do botão LinkedIn - deve estar sempre visível (não apenas no hover)
+### Acessibilidade
+- [ ] Contraste WCAG AAA
+- [ ] Focus states visíveis
+- [ ] Aria labels completos
 
-
-- [x] Corrigir link da 10XMentorAI para https://10xmentor.ai/
-
-
-- [x] Ajustar cor do card 10XMentorAI para ser igual aos outros 3 cards
-
-
-- [x] Substituir logo da NeoGovernança quebrado pelo arquivo correto
-
-
-- [x] Corrigir texto sumindo ao rolar no mobile
-
-
-- [x] Aplicar Opção 1 - Executivo Premium (#1E3A5F, #C49A3C, #4A5568)
-
-
-- [x] Aplicar Opção 2 - Inovação Sustentável (#0D4F4F, #5A6B3F, #86915F)
-
-
-- [x] Aplicar Opção 3 - Sofisticada Corporativa (#6B2737, #2D3748, #D4A57A) - PALETA FINAL ESCOLHIDA
+### Performance Visual
+- [ ] Otimizar animações (GPU acceleration)
+- [ ] Lazy loading de imagens
+- [ ] Preload de fonts críticas
 
