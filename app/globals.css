@@ -44,7 +44,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* PALETA FINAL: SOFISTICADA CORPORATIVA - Vinho + Chumbo */
+/* PALETA FINAL: EXECUTIVO PREMIUM - Azul Marinho + Dourado */
 :root {
   --radius: 0.75rem;
   --background: oklch(0.98 0.005 0);
@@ -54,19 +54,19 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.25 0.02 0);
   
-  /* Vinho como cor primária */
-  --primary: oklch(0.35 0.10 15); /* #6B2737 - vinho */
+  /* Azul Marinho como cor primária */
+  --primary: oklch(0.30 0.06 250); /* #1E3A5F - azul marinho */
   --primary-foreground: oklch(0.98 0 0);
   
-  /* Chumbo como secundário */
-  --secondary: oklch(0.32 0.01 250); /* #2D3748 - chumbo */
+  /* Cinza azulado como secundário */
+  --secondary: oklch(0.40 0.02 240); /* #4A5568 - cinza azulado */
   --secondary-foreground: oklch(0.98 0 0);
   
   --muted: oklch(0.96 0.005 0);
   --muted-foreground: oklch(0.55 0.02 0);
   
   /* Dourado como acento */
-  --accent: oklch(0.70 0.10 75); /* #D4A57A - dourado */
+  --accent: oklch(0.68 0.12 75); /* #C49A3C - dourado */
   --accent-foreground: oklch(0.15 0.02 0);
   
   --destructive: oklch(0.577 0.245 27.325);
