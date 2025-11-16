@@ -151,3 +151,11 @@
 - [x] Manter design premium consistente
 
 
+
+
+## Adicionar Depoimento Farias Souza
+- [x] Adicionar depoimento de Farias Souza (CEO da Board Academy) à seção de depoimentos
+- [x] Ajustar layout para 6 depoimentos (grid 2x3 responsivo)
+- [x] Manter design premium consistente
+
+

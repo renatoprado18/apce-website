@@ -561,6 +561,30 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Depoimento 6 - Farias Souza */}
+            <Card className="elevation-3 hover-lift group">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <svg className="w-12 h-12 text-accent opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+                <p className="text-lg mb-6 text-foreground leading-relaxed italic">
+                  &ldquo;Com uma leitura precisa sobre o caos do ambiente de negócios atual e um domínio avançado do uso da Inteligência Artificial como alavanca de transformação, Renato tem a capacidade rara de transformar ameaças em oportunidades concretas. Sua presença acrescenta profundidade estratégica, clareza e provocação intelectual a qualquer conselho que busque inovação, resiliência e visão de longo prazo.&rdquo;
+                </p>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary font-bold text-xl">FS</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Farias Souza</p>
+                    <p className="text-sm text-muted-foreground">CEO</p>
+                    <p className="text-sm text-primary font-medium">Board Academy</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
