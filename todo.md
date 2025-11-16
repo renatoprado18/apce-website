@@ -175,3 +175,12 @@
 - [x] Frase nova: "...para preparar líderes e aconselhar empresas a crescerem..."
 
 
+
+
+## Aplicar Paleta Opção 2 - Cinza Carvão + Verde Esmeralda
+- [x] Substituir paleta atual (Azul Marinho + Dourado) pela Opção 2
+- [x] Cores: Cinza Carvão #2C3E50, Verde Esmeralda #10B981, Cinza Claro #E5E7EB
+- [x] Atualizar variáveis CSS em app/globals.css
+- [x] Verificar consistência visual em todas as seções
+
+

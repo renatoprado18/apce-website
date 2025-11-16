@@ -44,7 +44,7 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* PALETA FINAL: EXECUTIVO PREMIUM - Azul Marinho + Dourado */
+/* PALETA FINAL: EXECUTIVO PREMIUM - Opção 2: Cinza Carvão + Verde Esmeralda */
 :root {
   --radius: 0.75rem;
   --background: oklch(0.98 0.005 0);
@@ -54,25 +54,25 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.25 0.02 0);
   
-  /* Azul Marinho como cor primária */
-  --primary: oklch(0.30 0.06 250); /* #1E3A5F - azul marinho */
+  /* Cinza Carvão como cor primária */
+  --primary: oklch(0.35 0.02 240); /* #2C3E50 - cinza carvão */
   --primary-foreground: oklch(0.98 0 0);
   
-  /* Cinza azulado como secundário */
-  --secondary: oklch(0.40 0.02 240); /* #4A5568 - cinza azulado */
-  --secondary-foreground: oklch(0.98 0 0);
+  /* Cinza claro como secundário */
+  --secondary: oklch(0.90 0.005 0); /* #E5E7EB - cinza claro */
+  --secondary-foreground: oklch(0.25 0.02 0);
   
   --muted: oklch(0.96 0.005 0);
   --muted-foreground: oklch(0.55 0.02 0);
   
-  /* Dourado como acento */
-  --accent: oklch(0.68 0.12 75); /* #C49A3C - dourado */
-  --accent-foreground: oklch(0.15 0.02 0);
+  /* Verde Esmeralda como acento */
+  --accent: oklch(0.65 0.15 160); /* #10B981 - verde esmeralda */
+  --accent-foreground: oklch(0.98 0 0);
   
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.005 250);
-  --input: oklch(0.92 0.005 250);
-  --ring: oklch(0.35 0.08 250);
+  --border: oklch(0.92 0.005 240);
+  --input: oklch(0.92 0.005 240);
+  --ring: oklch(0.65 0.15 160);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
