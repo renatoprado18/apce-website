@@ -193,3 +193,12 @@
 - [x] Verificar consistência visual em todas as seções
 
 
+
+
+## Aplicar Paleta Opção 2 - Inovação Sustentável
+- [x] Aplicar paleta Opção 2 da comparação de cores
+- [x] Cores: Verde Petróleo #0D4F4F (primária), Verde Oliva #5A6B3F (acento), Dourado Suave #86945F (secundário)
+- [x] Atualizar variáveis CSS em app/globals.css
+- [x] Verificar consistência visual em todas as seções
+
+
