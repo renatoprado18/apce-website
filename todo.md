@@ -143,3 +143,11 @@
 - [x] Manter design premium consistente
 
 
+
+
+## Adicionar Depoimento Gui Cintra
+- [x] Adicionar depoimento de Gui Cintra (Autonomia do Movimento) à seção de depoimentos
+- [x] Ajustar layout para 5 depoimentos (grid responsivo)
+- [x] Manter design premium consistente
+
+
