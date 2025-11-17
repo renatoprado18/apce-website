@@ -211,3 +211,12 @@
 - [x] Adicionar ícone e animação hover premium
 
 
+
+
+## Criar e Aplicar Favicon
+- [x] Gerar favicon baseado no logo AP do PDF
+- [x] Criar versões 32x32 (favicon.ico) e 180x180 (apple-touch-icon.png)
+- [x] Aplicar favicon ao website (app/favicon.ico)
+- [x] Testar exibição no navegador
+
+
