@@ -81,7 +81,7 @@ export default async function ArticlePage({ params }: PageProps) {
         <Header />
 
         {/* Article Header */}
-        <section className="pt-32 pb-16">
+        <section className="pt-32 pb-12">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <Link href="/blog">
@@ -94,30 +94,32 @@ export default async function ArticlePage({ params }: PageProps) {
                 </Button>
               </Link>
 
-              <Badge variant="secondary" className="mb-4">
-                {article.category}
-              </Badge>
+              <div className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-white rounded-xl p-8 md:p-10">
+                <Badge className="bg-white/20 text-white mb-4">
+                  {article.category}
+                </Badge>
 
-              <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
-                {article.title}
-              </h1>
+                <h1 className="text-2xl md:text-3xl font-bold mb-4 leading-tight">
+                  {article.title}
+                </h1>
 
-              <p className="text-lg text-muted-foreground mb-6">
-                {article.description}
-              </p>
+                <p className="text-base md:text-lg font-light mb-6 opacity-90">
+                  {article.description}
+                </p>
 
-              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground border-t border-b border-border py-4">
-                <div className="flex items-center gap-2">
-                  <User className="h-4 w-4" />
-                  <span>{article.author}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  <span>{formatDate(article.publishedAt)}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  <span>{article.readingTime} min de leitura</span>
+                <div className="flex flex-wrap gap-4 text-sm opacity-80">
+                  <div className="flex items-center gap-2">
+                    <User className="h-4 w-4" />
+                    <span>{article.author}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    <span>{formatDate(article.publishedAt)}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>{article.readingTime} min de leitura</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,8 +133,8 @@ export default async function ArticlePage({ params }: PageProps) {
               <div
                 className="prose prose-slate max-w-none
                   prose-headings:font-semibold prose-headings:text-foreground
-                  prose-h2:text-base prose-h2:mt-8 prose-h2:mb-3 prose-h2:text-primary prose-h2:uppercase prose-h2:tracking-wide prose-h2:border-b prose-h2:border-border prose-h2:pb-2
-                  prose-h3:text-base prose-h3:mt-5 prose-h3:mb-2 prose-h3:text-foreground
+                  prose-h2:text-sm prose-h2:mt-8 prose-h2:mb-4 prose-h2:text-primary prose-h2:uppercase prose-h2:tracking-widest prose-h2:font-bold
+                  prose-h3:text-sm prose-h3:mt-5 prose-h3:mb-2 prose-h3:text-muted-foreground prose-h3:font-medium
                   prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4 prose-p:text-base
                   prose-strong:text-foreground prose-strong:font-medium
                   prose-blockquote:border-l-4 prose-blockquote:border-primary/50 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-sm prose-blockquote:text-muted-foreground prose-blockquote:my-6
