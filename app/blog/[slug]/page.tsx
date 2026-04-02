@@ -129,11 +129,11 @@ export default async function ArticlePage({ params }: PageProps) {
               <div
                 className="prose prose-lg prose-slate max-w-none
                   prose-headings:font-bold prose-headings:text-foreground
-                  prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                  prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                  prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-6
+                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4
+                  prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3
+                  prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4
                   prose-strong:text-foreground prose-strong:font-semibold
-                  prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-xl prose-blockquote:text-primary
+                  prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-base prose-blockquote:text-primary/80
                   prose-ul:my-6 prose-ul:pl-6 prose-li:text-muted-foreground prose-li:mb-2
                   prose-ol:my-6 prose-ol:pl-6
                   prose-hr:my-12 prose-hr:border-border
