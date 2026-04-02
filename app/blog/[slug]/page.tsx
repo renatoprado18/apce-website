@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Calendar, Clock, Tag, User, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -94,32 +95,42 @@ export default async function ArticlePage({ params }: PageProps) {
                 </Button>
               </Link>
 
-              <div className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-white rounded-xl p-8 md:p-10">
-                <Badge className="bg-white/20 text-white mb-4">
-                  {article.category}
-                </Badge>
+              {article.image && (
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-6">
+                  <Image
+                    src={article.image}
+                    alt={article.title}
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              )}
 
-                <h1 className="text-2xl md:text-3xl font-bold mb-4 leading-tight">
-                  {article.title}
-                </h1>
+              <Badge variant="secondary" className="mb-4">
+                {article.category}
+              </Badge>
 
-                <p className="text-base md:text-lg font-light mb-6 opacity-90">
-                  {article.description}
-                </p>
+              <h1 className="text-2xl md:text-3xl font-bold mb-4 leading-tight text-foreground">
+                {article.title}
+              </h1>
 
-                <div className="flex flex-wrap gap-4 text-sm opacity-80">
-                  <div className="flex items-center gap-2">
-                    <User className="h-4 w-4" />
-                    <span>{article.author}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
-                    <span>{formatDate(article.publishedAt)}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4" />
-                    <span>{article.readingTime} min de leitura</span>
-                  </div>
+              <p className="text-base md:text-lg text-muted-foreground mb-6">
+                {article.description}
+              </p>
+
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground border-t pt-4">
+                <div className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  <span>{article.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>{formatDate(article.publishedAt)}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="h-4 w-4" />
+                  <span>{article.readingTime} min de leitura</span>
                 </div>
               </div>
             </div>

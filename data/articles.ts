@@ -12,6 +12,7 @@ export interface Article {
   readingTime: number;
   linkedInUrl?: string;
   featured?: boolean;
+  image?: string;
 }
 
 export const articles: Article[] = [
@@ -81,7 +82,8 @@ A NeoGovernança não é apenas um conceito – é um convite para líderes e co
     tags: ["NeoGovernança", "Governança Corporativa", "Liderança", "Estratégia", "Sustentabilidade"],
     readingTime: 5,
     linkedInUrl: "https://www.linkedin.com/pulse/por-que-falar-em-neogovernan%C3%A7a-renato-de-faria-e-almeida-prado-soulf",
-    featured: true
+    featured: true,
+    image: "/images/articles/por-que-falar-em-neogovernanca.jpg"
   },
   {
     id: "2",
@@ -149,7 +151,8 @@ A NeoGovernança é um conceito que traduz esse equilíbrio dinâmico, permitind
     tags: ["NeoGovernança", "Cases", "Santo Grau", "Sustentabilidade", "Inovação"],
     readingTime: 4,
     linkedInUrl: "https://www.linkedin.com/pulse/santo-grau-um-exemplo-inspirador-que-ilustra-o-de-renato-aee1f",
-    featured: true
+    featured: true,
+    image: "/images/articles/santo-grau-exemplo-neogovernanca.jpg"
   },
   {
     id: "3",
@@ -196,7 +199,8 @@ A teoria da complexidade não é abstração acadêmica - é manual prático par
     tags: ["Complexidade", "Governança", "Liderança Adaptativa", "Inovação", "Estratégia"],
     readingTime: 4,
     linkedInUrl: "https://www.linkedin.com/pulse/teoria-da-complexidade-na-governan%C3%A7a-ci%C3%AAncia-por-tr%C3%A1s-renato-vdwkf",
-    featured: true
+    featured: true,
+    image: "/images/articles/teoria-complexidade-governanca.jpg"
   },
   {
     id: "4",
@@ -261,7 +265,8 @@ A NeoGovernança é mais do que um modelo; é um convite para lideranças que de
     category: "NeoGovernança",
     tags: ["NeoGovernança", "Era do Caos", "Governança", "ESG", "Transformação Digital"],
     readingTime: 5,
-    linkedInUrl: "https://www.linkedin.com/pulse/como-neogovernan%C3%A7a-responde-aos-desafios-da-era-do-renato-bmfgf"
+    linkedInUrl: "https://www.linkedin.com/pulse/como-neogovernan%C3%A7a-responde-aos-desafios-da-era-do-renato-bmfgf",
+    image: "/images/articles/como-neogovernanca-responde-desafios-era-caos.jpg"
   },
   {
     id: "5",
@@ -329,7 +334,8 @@ Abraçar a complexidade é redefinir as regras do jogo. Com a mentalidade certa,
     category: "Complexidade",
     tags: ["Complexidade", "Era do Caos", "Estratégia", "Inovação", "Resiliência"],
     readingTime: 5,
-    linkedInUrl: "https://www.linkedin.com/pulse/adaptar-se-ao-inimagin%C3%A1vel-como-organiza%C3%A7%C3%B5es-podem-em-renato-p5bbf"
+    linkedInUrl: "https://www.linkedin.com/pulse/adaptar-se-ao-inimagin%C3%A1vel-como-organiza%C3%A7%C3%B5es-podem-em-renato-p5bbf",
+    image: "/images/articles/adaptar-se-ao-inimaginavel-complexidade-exponencial.jpg"
   },
   {
     id: "6",
@@ -388,7 +394,8 @@ A diversidade não é custo - é investimento. Não é obrigação - é oportuni
     category: "Governança",
     tags: ["Diversidade", "Inovação", "Governança", "Liderança", "ESG"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/diversidade-como-alavanca-para-inova%C3%A7%C3%A3o-vantagem-que-renato-6dbif"
+    linkedInUrl: "https://www.linkedin.com/pulse/diversidade-como-alavanca-para-inova%C3%A7%C3%A3o-vantagem-que-renato-6dbif",
+    image: "/images/articles/diversidade-alavanca-inovacao.jpg"
   },
   {
     id: "7",
@@ -439,7 +446,8 @@ A verdadeira inovação não é apenas sobre tecnologia - é sobre como pensamos
     category: "Inovação",
     tags: ["Inovação", "Liderança", "Governança", "Estratégia", "Transformação Digital"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/estamos-mesmo-comando-da-inova%C3%A7%C3%A3o-renato-de-faria-e-almeida-prado-vvnwf"
+    linkedInUrl: "https://www.linkedin.com/pulse/estamos-mesmo-comando-da-inova%C3%A7%C3%A3o-renato-de-faria-e-almeida-prado-vvnwf",
+    image: "/images/articles/estamos-mesmo-no-comando-da-inovacao.jpg"
   },
   {
     id: "8",
@@ -491,7 +499,8 @@ Isso não é utopia – é estratégia inteligente para um mundo onde reputaçã
     category: "Estratégia",
     tags: ["Estratégia", "Sustentabilidade", "NeoGovernança", "Governança", "ESG"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/quando-crescer-j%C3%A1-n%C3%A3o-basta-complexidade-de-redefinir-renato-miorf"
+    linkedInUrl: "https://www.linkedin.com/pulse/quando-crescer-j%C3%A1-n%C3%A3o-basta-complexidade-de-redefinir-renato-miorf",
+    image: "/images/articles/quando-crescer-ja-nao-basta.jpg"
   },
   {
     id: "9",
@@ -553,7 +562,8 @@ A resiliência cibernética é responsabilidade compartilhada, mas a governança
     category: "Tecnologia",
     tags: ["Cibersegurança", "Governança", "Tecnologia", "Risco", "Resiliência"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/resili%C3%AAncia-cibern%C3%A9tica-um-desafio-para-os-conselhos-renato-1znyf"
+    linkedInUrl: "https://www.linkedin.com/pulse/resili%C3%AAncia-cibern%C3%A9tica-um-desafio-para-os-conselhos-renato-1znyf",
+    image: "/images/articles/resiliencia-cibernetica-desafio-conselhos.jpg"
   },
   {
     id: "10",
@@ -628,7 +638,8 @@ O equilíbrio está em ser ágil com responsabilidade – um princípio central 
     tags: ["Inteligência Artificial", "IA Generativa", "Governança", "Tecnologia", "Inovação"],
     readingTime: 5,
     linkedInUrl: "https://www.linkedin.com/pulse/conselhos-na-encruzilhada-da-3%C2%AA-onda-ia-de-faria-e-almeida-prado-wnbpf",
-    featured: true
+    featured: true,
+    image: "/images/articles/conselhos-encruzilhada-terceira-onda-ia.jpg"
   },
   {
     id: "11",
@@ -690,7 +701,8 @@ A confiança **não nasce do acaso** – ela é construída **por meio de decis�
     category: "NeoGovernança",
     tags: ["Confiança", "NeoGovernança", "Liderança", "Governança", "Era do Caos"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/confian%C3%A7a-como-pilar-estrat%C3%A9gico-na-era-da-de-faria-e-almeida-prado-cbcuf"
+    linkedInUrl: "https://www.linkedin.com/pulse/confian%C3%A7a-como-pilar-estrat%C3%A9gico-na-era-da-de-faria-e-almeida-prado-cbcuf",
+    image: "/images/articles/confianca-pilar-estrategico-era-complexidade.jpg"
   },
   {
     id: "12",
@@ -745,7 +757,8 @@ A adaptabilidade não é apenas uma vantagem competitiva – é uma necessidade 
     category: "Governança",
     tags: ["Resiliência", "Adaptação", "Governança", "Conselhos", "Aprendizado"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/adapta%C3%A7%C3%A3o-cont%C3%ADnua-o-segredo-da-resili%C3%AAncia-de-faria-e-almeida-prado-1mhnf"
+    linkedInUrl: "https://www.linkedin.com/pulse/adapta%C3%A7%C3%A3o-cont%C3%ADnua-o-segredo-da-resili%C3%AAncia-de-faria-e-almeida-prado-1mhnf",
+    image: "/images/articles/adaptacao-continua-segredo-resiliencia.jpg"
   },
   {
     id: "13",
@@ -797,7 +810,8 @@ A digitalização é a próxima fronteira para empresas que desejam não apenas 
     category: "Governança",
     tags: ["Ambidestria", "Inovação", "Eficiência", "Governança", "Conselhos"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/ambidestria-organizacional-o-papel-do-conselho-em-e-renato-rwkvf"
+    linkedInUrl: "https://www.linkedin.com/pulse/ambidestria-organizacional-o-papel-do-conselho-em-e-renato-rwkvf",
+    image: "/images/articles/ambidestria-organizacional-conselho.jpg"
   },
   {
     id: "14",
@@ -844,7 +858,8 @@ Conselhos que cultivam uma mentalidade curiosa estão melhor posicionados para l
     category: "Inovação",
     tags: ["Curiosidade", "Inovação", "Conselhos", "Liderança", "Aprendizado"],
     readingTime: 4,
-    linkedInUrl: "https://www.linkedin.com/pulse/curiosidade-como-motor-da-inova%C3%A7%C3%A3o-conselho-de-faria-e-almeida-prado-joj4f"
+    linkedInUrl: "https://www.linkedin.com/pulse/curiosidade-como-motor-da-inova%C3%A7%C3%A3o-conselho-de-faria-e-almeida-prado-joj4f",
+    image: "/images/articles/curiosidade-motor-inovacao-conselho.jpg"
   },
   {
     id: "15",
@@ -899,7 +914,8 @@ Ao prever múltiplos cenários e desenvolver estratégias flexíveis, os conselh
     category: "Estratégia",
     tags: ["Cenarização", "Estratégia", "Governança", "Shell", "Planejamento"],
     readingTime: 5,
-    linkedInUrl: "https://www.linkedin.com/pulse/cenariza%C3%A7%C3%A3o-estrat%C3%A9gica-antecipando-o-futuro-dos-com-renato-eensf"
+    linkedInUrl: "https://www.linkedin.com/pulse/cenariza%C3%A7%C3%A3o-estrat%C3%A9gica-antecipando-o-futuro-dos-com-renato-eensf",
+    image: "/images/articles/cenarizacao-estrategica-antecipando-futuro.jpg"
   }
 ];
 
