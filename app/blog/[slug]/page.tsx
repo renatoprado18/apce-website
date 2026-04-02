@@ -127,31 +127,44 @@ export default async function ArticlePage({ params }: PageProps) {
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <div
-                className="prose prose-lg prose-slate max-w-none
-                  prose-headings:font-bold prose-headings:text-foreground
-                  prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4
-                  prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3
-                  prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4
-                  prose-strong:text-foreground prose-strong:font-semibold
-                  prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-base prose-blockquote:text-primary/80
-                  prose-ul:my-6 prose-ul:pl-6 prose-li:text-muted-foreground prose-li:mb-2
-                  prose-ol:my-6 prose-ol:pl-6
-                  prose-hr:my-12 prose-hr:border-border
+                className="prose prose-slate max-w-none
+                  prose-headings:font-semibold prose-headings:text-foreground prose-headings:normal-case
+                  prose-h2:text-lg prose-h2:mt-8 prose-h2:mb-3 prose-h2:text-primary prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+                  prose-h3:text-base prose-h3:mt-6 prose-h3:mb-2 prose-h3:text-foreground
+                  prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4 prose-p:text-base
+                  prose-strong:text-foreground prose-strong:font-medium
+                  prose-blockquote:border-l-4 prose-blockquote:border-primary/50 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-sm prose-blockquote:text-muted-foreground prose-blockquote:my-6
+                  prose-ul:my-4 prose-ul:pl-6 prose-li:text-muted-foreground prose-li:mb-1 prose-li:text-base
+                  prose-ol:my-4 prose-ol:pl-6
+                  prose-hr:my-8 prose-hr:border-border
                   prose-a:text-primary prose-a:underline hover:prose-a:no-underline"
               >
                 {article.content.split("\n").map((paragraph, index) => {
                   const trimmed = paragraph.trim();
                   if (!trimmed) return null;
 
+                  // Helper to convert ALL CAPS to Title Case
+                  const toTitleCase = (str: string) => {
+                    // If more than 50% uppercase, convert to title case
+                    const upperCount = (str.match(/[A-ZÀ-Ú]/g) || []).length;
+                    const letterCount = (str.match(/[a-zA-ZÀ-ú]/g) || []).length;
+                    if (letterCount > 0 && upperCount / letterCount > 0.5) {
+                      return str.toLowerCase().replace(/(?:^|\s|[-])\S/g, (match) => match.toUpperCase());
+                    }
+                    return str;
+                  };
+
                   // Handle headers
                   if (trimmed.startsWith("## ")) {
+                    const headerText = trimmed.replace("## ", "").replace(/:$/, "");
                     return (
-                      <h2 key={index}>{trimmed.replace("## ", "")}</h2>
+                      <h2 key={index}>{toTitleCase(headerText)}</h2>
                     );
                   }
                   if (trimmed.startsWith("### ")) {
+                    const headerText = trimmed.replace("### ", "").replace(/:$/, "");
                     return (
-                      <h3 key={index}>{trimmed.replace("### ", "")}</h3>
+                      <h3 key={index}>{toTitleCase(headerText)}</h3>
                     );
                   }
 
