@@ -3,13 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Brain, 
-  TrendingUp, 
-  Shield, 
-  Heart, 
-  Mail, 
-  Phone, 
+import { Header } from "@/components/Header";
+import {
+  Brain,
+  TrendingUp,
+  Shield,
+  Heart,
+  Mail,
+  Phone,
   Linkedin,
   Award,
   GraduationCap,
@@ -47,21 +48,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Header/Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm elevation-2">
-        <div className="container px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <img src="/images/logo-ap.png" alt="Almeida Prado Conselhos Empresariais" className="h-12 w-auto" />
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">Início</Link>
-            <Link href="/neogovernanca" className="text-foreground hover:text-primary transition-colors font-medium">NeoGovernança</Link>
-            <Link href="/cases" className="text-foreground hover:text-primary transition-colors font-medium">Cases</Link>
-            <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">Blog</Link>
-            <a href="/#contato" className="text-foreground hover:text-primary transition-colors font-medium">Contato</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary via-primary/90 to-secondary overflow-hidden pt-20">

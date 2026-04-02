@@ -2,27 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Header } from "@/components/Header";
 import { ArrowLeft, TrendingUp, Users, Leaf, Infinity } from "lucide-react";
 import Link from "next/link";
 
 export default function NeoGovernanca() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header/Navbar */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
-        <div className="container px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <img src="/images/logo-ap.png" alt="Almeida Prado Conselhos Empresariais" className="h-12 w-auto" />
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">Início</Link>
-            <Link href="/neogovernanca" className="text-foreground hover:text-primary transition-colors font-medium">NeoGovernança</Link>
-            <Link href="/cases" className="text-foreground hover:text-primary transition-colors font-medium">Cases</Link>
-            <Link href="/blog" className="text-foreground hover:text-primary transition-colors font-medium">Blog</Link>
-            <a href="/#contato" className="text-foreground hover:text-primary transition-colors font-medium">Contato</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Header */}
       <section className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-white py-20 pt-32">
