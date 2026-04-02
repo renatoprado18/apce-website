@@ -132,7 +132,7 @@ export default async function ArticlePage({ params }: PageProps) {
             <div className="max-w-3xl mx-auto">
               <div
                 className="max-w-none
-                  [&>h2]:text-xs [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:text-primary [&>h2]:uppercase [&>h2]:tracking-[0.2em] [&>h2]:font-semibold [&>h2]:border-b [&>h2]:border-border [&>h2]:pb-2
+                  [&>h2]:text-sm [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:text-primary [&>h2]:uppercase [&>h2]:tracking-[0.15em] [&>h2]:font-semibold [&>h2]:border-b [&>h2]:border-border [&>h2]:pb-2
                   [&>h3]:text-sm [&>h3]:mt-6 [&>h3]:mb-2 [&>h3]:text-foreground [&>h3]:font-medium
                   [&>p]:text-muted-foreground [&>p]:leading-relaxed [&>p]:mb-4 [&>p]:text-base
                   [&_strong]:text-foreground [&_strong]:font-medium
