@@ -131,17 +131,16 @@ export default async function ArticlePage({ params }: PageProps) {
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <div
-                className="prose prose-slate max-w-none
-                  prose-headings:font-semibold prose-headings:text-foreground
-                  prose-h2:text-sm prose-h2:mt-8 prose-h2:mb-4 prose-h2:text-primary prose-h2:uppercase prose-h2:tracking-widest prose-h2:font-bold
-                  prose-h3:text-sm prose-h3:mt-5 prose-h3:mb-2 prose-h3:text-muted-foreground prose-h3:font-medium
-                  prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4 prose-p:text-base
-                  prose-strong:text-foreground prose-strong:font-medium
-                  prose-blockquote:border-l-4 prose-blockquote:border-primary/50 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-sm prose-blockquote:text-muted-foreground prose-blockquote:my-6
-                  prose-ul:my-4 prose-ul:pl-6 prose-li:text-muted-foreground prose-li:mb-1 prose-li:text-base
-                  prose-ol:my-4 prose-ol:pl-6
-                  prose-hr:my-8 prose-hr:border-border
-                  prose-a:text-primary prose-a:underline hover:prose-a:no-underline"
+                className="max-w-none
+                  [&>h2]:text-xs [&>h2]:mt-10 [&>h2]:mb-4 [&>h2]:text-primary [&>h2]:uppercase [&>h2]:tracking-[0.2em] [&>h2]:font-semibold [&>h2]:border-b [&>h2]:border-border [&>h2]:pb-2
+                  [&>h3]:text-sm [&>h3]:mt-6 [&>h3]:mb-2 [&>h3]:text-foreground [&>h3]:font-medium
+                  [&>p]:text-muted-foreground [&>p]:leading-relaxed [&>p]:mb-4 [&>p]:text-base
+                  [&_strong]:text-foreground [&_strong]:font-medium
+                  [&>blockquote]:border-l-4 [&>blockquote]:border-primary/50 [&>blockquote]:pl-4 [&>blockquote]:italic [&>blockquote]:text-sm [&>blockquote]:text-muted-foreground [&>blockquote]:my-6
+                  [&>ul]:my-4 [&>ul]:pl-6 [&_li]:text-muted-foreground [&_li]:mb-1 [&_li]:text-base
+                  [&>ol]:my-4 [&>ol]:pl-6
+                  [&>hr]:my-8 [&>hr]:border-border
+                  [&_a]:text-primary [&_a]:underline hover:[&_a]:no-underline"
               >
                 {article.content.split("\n").map((paragraph, index) => {
                   const trimmed = paragraph.trim();
