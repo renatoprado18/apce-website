@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { generatePersonJsonLd } from "@/lib/seo";
+import { Analytics } from "@/components/Analytics";
 
 const baseUrl = "https://almeida-prado.com";
 
@@ -97,7 +98,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Analytics />
+        {children}
+      </body>
     </html>
   );
 }

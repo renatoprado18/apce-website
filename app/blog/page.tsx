@@ -4,19 +4,41 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/Header";
+import { SearchInput } from "@/components/SearchInput";
 import { articles, getAllCategories } from "@/data/articles";
 import { Calendar, ArrowLeft, Clock, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("Todos");
+  const [searchQuery, setSearchQuery] = useState<string>("");
 
   const categories = ["Todos", ...getAllCategories()];
 
-  const filteredArticles = selectedCategory === "Todos"
-    ? articles
-    : articles.filter(article => article.category === selectedCategory);
+  const filteredArticles = useMemo(() => {
+    let result = articles;
+
+    // Filter by category
+    if (selectedCategory !== "Todos") {
+      result = result.filter(article => article.category === selectedCategory);
+    }
+
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(article =>
+        article.title.toLowerCase().includes(query) ||
+        article.description.toLowerCase().includes(query) ||
+        article.tags.some(tag => tag.toLowerCase().includes(query))
+      );
+    }
+
+    // Sort by date (newest first)
+    return result.sort((a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    );
+  }, [selectedCategory, searchQuery]);
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -27,10 +49,7 @@ export default function Blog() {
     });
   };
 
-  // Sort articles by date (newest first)
-  const sortedArticles = [...filteredArticles].sort((a, b) =>
-    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
+  const sortedArticles = filteredArticles;
 
   // Featured articles for hero section
   const featuredArticles = articles.filter(a => a.featured).slice(0, 3);
@@ -93,9 +112,23 @@ export default function Blog() {
         </section>
       )}
 
-      {/* Filtros */}
+      {/* Busca e Filtros */}
       <section className="py-8 border-b">
         <div className="container px-4">
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <div className="w-full md:w-80">
+              <SearchInput
+                value={searchQuery}
+                onChange={setSearchQuery}
+                placeholder="Buscar artigos..."
+              />
+            </div>
+            {searchQuery && (
+              <p className="text-sm text-muted-foreground self-center">
+                {filteredArticles.length} resultado(s) encontrado(s)
+              </p>
+            )}
+          </div>
           <div className="flex flex-wrap gap-3">
             {categories.map((category) => (
               <Button

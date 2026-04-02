@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/Header";
+import { ShareButtons } from "@/components/ShareButtons";
 import { articles, getArticleBySlug, getFeaturedArticles } from "@/data/articles";
 import { generateSEO, generateArticleJsonLd } from "@/lib/seo";
 
@@ -212,6 +213,15 @@ export default async function ArticlePage({ params }: PageProps) {
                     </Badge>
                   ))}
                 </div>
+              </div>
+
+              {/* Share Buttons */}
+              <div className="mt-8 pt-8 border-t">
+                <ShareButtons
+                  url={`https://almeida-prado.com/blog/${article.slug}`}
+                  title={article.title}
+                  description={article.description}
+                />
               </div>
 
               {/* LinkedIn Link */}
