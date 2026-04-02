@@ -81,56 +81,58 @@ export default async function ArticlePage({ params }: PageProps) {
         <Header />
 
         {/* Article Header */}
-        <section className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-white py-20 pt-32">
+        <section className="pt-32 pb-16">
           <div className="container px-4">
-            <Link href="/blog">
-              <Button
-                variant="ghost"
-                className="text-white hover:bg-white/10 mb-8"
-              >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Voltar ao Blog
-              </Button>
-            </Link>
+            <div className="max-w-3xl mx-auto">
+              <Link href="/blog">
+                <Button
+                  variant="ghost"
+                  className="text-muted-foreground hover:text-foreground mb-6 -ml-4"
+                >
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Voltar ao Blog
+                </Button>
+              </Link>
 
-            <Badge className="bg-white/20 text-white mb-4">
-              {article.category}
-            </Badge>
+              <Badge variant="secondary" className="mb-4">
+                {article.category}
+              </Badge>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              {article.title}
-            </h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight text-foreground">
+                {article.title}
+              </h1>
 
-            <p className="text-xl md:text-2xl font-light mb-8 opacity-90 max-w-4xl">
-              {article.description}
-            </p>
+              <p className="text-lg text-muted-foreground mb-6">
+                {article.description}
+              </p>
 
-            <div className="flex flex-wrap gap-6 text-sm opacity-80">
-              <div className="flex items-center gap-2">
-                <User className="h-4 w-4" />
-                <span>{article.author}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                <span>{formatDate(article.publishedAt)}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
-                <span>{article.readingTime} min de leitura</span>
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground border-t border-b border-border py-4">
+                <div className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  <span>{article.author}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>{formatDate(article.publishedAt)}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="h-4 w-4" />
+                  <span>{article.readingTime} min de leitura</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Article Content */}
-        <article className="py-16">
+        <article className="py-8">
           <div className="container px-4">
             <div className="max-w-3xl mx-auto">
               <div
                 className="prose prose-slate max-w-none
-                  prose-headings:font-semibold prose-headings:text-foreground prose-headings:normal-case
-                  prose-h2:text-lg prose-h2:mt-8 prose-h2:mb-3 prose-h2:text-primary prose-h2:border-b prose-h2:border-border prose-h2:pb-2
-                  prose-h3:text-base prose-h3:mt-6 prose-h3:mb-2 prose-h3:text-foreground
+                  prose-headings:font-semibold prose-headings:text-foreground
+                  prose-h2:text-base prose-h2:mt-8 prose-h2:mb-3 prose-h2:text-primary prose-h2:uppercase prose-h2:tracking-wide prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+                  prose-h3:text-base prose-h3:mt-5 prose-h3:mb-2 prose-h3:text-foreground
                   prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:mb-4 prose-p:text-base
                   prose-strong:text-foreground prose-strong:font-medium
                   prose-blockquote:border-l-4 prose-blockquote:border-primary/50 prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-sm prose-blockquote:text-muted-foreground prose-blockquote:my-6
@@ -143,28 +145,39 @@ export default async function ArticlePage({ params }: PageProps) {
                   const trimmed = paragraph.trim();
                   if (!trimmed) return null;
 
-                  // Helper to convert ALL CAPS to Title Case
-                  const toTitleCase = (str: string) => {
-                    // If more than 50% uppercase, convert to title case
+                  // Skip if this paragraph is the same as the description (avoid duplication)
+                  if (index < 3 && trimmed.replace(/\*\*/g, "").substring(0, 50) === article.description.substring(0, 50)) {
+                    return null;
+                  }
+
+                  // Helper to convert ALL CAPS to Sentence Case
+                  const toSentenceCase = (str: string) => {
                     const upperCount = (str.match(/[A-ZÀ-Ú]/g) || []).length;
                     const letterCount = (str.match(/[a-zA-ZÀ-ú]/g) || []).length;
                     if (letterCount > 0 && upperCount / letterCount > 0.5) {
-                      return str.toLowerCase().replace(/(?:^|\s|[-])\S/g, (match) => match.toUpperCase());
+                      return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
                     }
                     return str;
+                  };
+
+                  // Helper to normalize ALL CAPS words in text (like "EMERGÊNCIA:" -> "Emergência:")
+                  const normalizeAllCaps = (str: string) => {
+                    return str.replace(/\b([A-ZÀ-Ú]{2,})\b/g, (match) => {
+                      return match.charAt(0) + match.slice(1).toLowerCase();
+                    });
                   };
 
                   // Handle headers
                   if (trimmed.startsWith("## ")) {
                     const headerText = trimmed.replace("## ", "").replace(/:$/, "");
                     return (
-                      <h2 key={index}>{toTitleCase(headerText)}</h2>
+                      <h2 key={index}>{toSentenceCase(headerText)}</h2>
                     );
                   }
                   if (trimmed.startsWith("### ")) {
                     const headerText = trimmed.replace("### ", "").replace(/:$/, "");
                     return (
-                      <h3 key={index}>{toTitleCase(headerText)}</h3>
+                      <h3 key={index}>{toSentenceCase(headerText)}</h3>
                     );
                   }
 
@@ -177,7 +190,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   if (trimmed.startsWith("> ")) {
                     return (
                       <blockquote key={index}>
-                        <p>{trimmed.replace("> ", "").replace(/"/g, "")}</p>
+                        <p>{normalizeAllCaps(trimmed.replace("> ", "").replace(/"/g, ""))}</p>
                       </blockquote>
                     );
                   }
@@ -188,9 +201,9 @@ export default async function ArticlePage({ params }: PageProps) {
                       <ul key={index}>
                         <li
                           dangerouslySetInnerHTML={{
-                            __html: trimmed
+                            __html: normalizeAllCaps(trimmed
                               .replace("- ", "")
-                              .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+                              .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")),
                           }}
                         />
                       </ul>
@@ -202,9 +215,9 @@ export default async function ArticlePage({ params }: PageProps) {
                     <p
                       key={index}
                       dangerouslySetInnerHTML={{
-                        __html: trimmed
+                        __html: normalizeAllCaps(trimmed
                           .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                          .replace(/\*(.*?)\*/g, "<em>$1</em>"),
+                          .replace(/\*(.*?)\*/g, "<em>$1</em>")),
                       }}
                     />
                   );
@@ -261,12 +274,12 @@ export default async function ArticlePage({ params }: PageProps) {
 
         {/* Related Articles */}
         {relatedArticles.length > 0 && (
-          <section className="py-16 bg-muted/30">
+          <section className="py-12 bg-muted/30">
             <div className="container px-4">
-              <h2 className="text-3xl font-bold mb-8 text-center">
+              <h2 className="text-xl font-semibold mb-6 text-center text-foreground">
                 Artigos Relacionados
               </h2>
-              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 {relatedArticles.map((related) => (
                   <Link key={related.id} href={`/blog/${related.slug}`}>
                     <Card className="h-full hover:shadow-lg transition-all hover:-translate-y-1">
@@ -290,22 +303,19 @@ export default async function ArticlePage({ params }: PageProps) {
         )}
 
         {/* CTA */}
-        <section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-secondary text-white">
-          <div className="container px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Quer discutir esse tema?
-            </h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-              Estou sempre aberto a conversas sobre governança, estratégia e
-              inovação
-            </p>
-            <Button
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
-              asChild
-            >
-              <Link href="/#contato">Entre em Contato</Link>
-            </Button>
+        <section className="py-12 border-t">
+          <div className="container px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-xl font-semibold mb-3 text-foreground">
+                Quer discutir esse tema?
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Estou sempre aberto a conversas sobre governança, estratégia e inovação
+              </p>
+              <Button asChild>
+                <Link href="/#contato">Entre em Contato</Link>
+              </Button>
+            </div>
           </div>
         </section>
       </div>
