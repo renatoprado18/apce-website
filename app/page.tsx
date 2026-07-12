@@ -108,6 +108,28 @@ export default function Home() {
               </Card>
             </Link>
 
+            <a href="https://www.imensiah.com.br" target="_blank" rel="noopener noreferrer">
+              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
+                <CardHeader>
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
+                    <img src="/images/logo-imensiah.webp" alt="imensIAH" className="w-full h-full object-contain group-hover:scale-110 transition-transform" />
+                  </div>
+                  <CardTitle className="text-xl">imensIAH</CardTitle>
+                  <CardDescription>Inteligência Estratégica com IA + IH</CardDescription>
+                </CardHeader>
+              </Card>
+            </a>
+
+            <Card className="hover-lift elevation-2 border-2 h-full group">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Briefcase className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
+                </div>
+                <CardTitle className="text-xl">Estratégia &amp; Advisory de Negócios</CardTitle>
+                <CardDescription>Advisory de estratégia, crescimento e transações (M&amp;A) para alta liderança</CardDescription>
+              </CardHeader>
+            </Card>
+
             <Link href="/cases">
               <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
                 <CardHeader>
@@ -131,28 +153,6 @@ export default function Home() {
                 </CardHeader>
               </Card>
             </Link>
-
-            <Card className="hover-lift elevation-2 border-2 h-full group">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Briefcase className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
-                </div>
-                <CardTitle className="text-xl">Estratégia &amp; Advisory de Negócios</CardTitle>
-                <CardDescription>Advisory de estratégia, crescimento e transações (M&amp;A) para alta liderança</CardDescription>
-              </CardHeader>
-            </Card>
-
-            <a href="https://www.imensiah.com.br" target="_blank" rel="noopener noreferrer">
-              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
-                    <img src="/images/logo-imensiah.webp" alt="imensIAH" className="w-full h-full object-contain group-hover:scale-110 transition-transform" />
-                  </div>
-                  <CardTitle className="text-xl">imensIAH</CardTitle>
-                  <CardDescription>Inteligência Estratégica com IA + IH</CardDescription>
-                </CardHeader>
-              </Card>
-            </a>
           </div>
         </div>
       </section>
