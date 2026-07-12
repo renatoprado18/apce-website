@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 const baseUrl = 'https://almeida-prado.com'
 const siteName = 'Renato de Faria e Almeida Prado'
-const defaultDescription = 'Conselheiro do Futuro, Estrategista, AI Thinker. Especialista em NeoGovernança, IA e Estratégia Empresarial. Cofundador 10XMentorAI & imensIAH.'
+const defaultDescription = 'Conselheiro do Futuro, Estrategista de Negócios, AI Thinker. Especialista em NeoGovernança, IA e Estratégia Empresarial. Cofundador imensIAH.'
 
 export interface SEOProps {
   title: string
@@ -141,17 +141,12 @@ export function generatePersonJsonLd() {
     name: 'Renato de Faria e Almeida Prado',
     url: baseUrl,
     image: `${baseUrl}/images/renato-photo.jpg`,
-    jobTitle: 'Conselheiro do Futuro, Estrategista, AI Thinker',
+    jobTitle: 'Conselheiro do Futuro, Estrategista de Negócios, AI Thinker',
     description: defaultDescription,
     sameAs: [
       'https://www.linkedin.com/in/renatoaprado/',
     ],
     worksFor: [
-      {
-        '@type': 'Organization',
-        name: '10XMentorAI',
-        url: 'https://10xmentor.ai/',
-      },
       {
         '@type': 'Organization',
         name: 'imensIAH',
@@ -177,6 +172,8 @@ export function generatePersonJsonLd() {
       'Governança Corporativa',
       'Inteligência Artificial',
       'Estratégia Empresarial',
+      'Estratégia de Negócios',
+      'Fusões e Aquisições (M&A)',
       'ESG',
       'Liderança',
     ],

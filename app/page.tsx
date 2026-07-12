@@ -59,7 +59,7 @@ export default function Home() {
             Renato de Faria e Almeida Prado
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light max-w-4xl mx-auto animate-fade-in-up animation-delay-200">
-            Conselheiro do Futuro, Estrategista, AI Thinker, Cofundador 10XMentorAI & imensIAH
+            Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH
           </p>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-400">
             Com quase 30 anos de trajetória empreendedora, participação em conselhos, inovação e liderança com propósito, 
@@ -132,17 +132,15 @@ export default function Home() {
               </Card>
             </Link>
 
-            <a href="https://10xmentor.ai/" target="_blank" rel="noopener noreferrer">
-              <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
-                <CardHeader>
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Brain className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
-                  </div>
-                  <CardTitle className="text-xl">10XMentorAI</CardTitle>
-                  <CardDescription>Mentoria com IA para alta liderança</CardDescription>
-                </CardHeader>
-              </Card>
-            </a>
+            <Card className="hover-lift elevation-2 border-2 h-full group">
+              <CardHeader>
+                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Briefcase className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
+                </div>
+                <CardTitle className="text-xl">Estratégia &amp; Advisory de Negócios</CardTitle>
+                <CardDescription>Advisory de estratégia, crescimento e transações (M&amp;A) para alta liderança</CardDescription>
+              </CardHeader>
+            </Card>
 
             <a href="https://www.imensiah.com.br" target="_blank" rel="noopener noreferrer">
               <Card className="hover-lift elevation-2 border-2 cursor-pointer h-full group">
@@ -176,16 +174,18 @@ export default function Home() {
               Propósito & Visão
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              Vi de perto os desafios que executivos e conselheiros enfrentam para aplicar IA com foco estratégico. 
-              A tecnologia existe. O que falta é sabedoria aplicada. É isso que construímos na <strong className="text-primary">10XMentorAI</strong>: 
-              mentoria contínua, personalizada e estratégica para líderes, com agentes treinados para conversar na linguagem do boardroom.
+              Vi de perto os desafios que executivos e conselheiros enfrentam para aplicar IA com foco estratégico.
+              A tecnologia existe. O que falta é sabedoria aplicada. É essa lacuna que ocupo: levo ao boardroom a leitura
+              estratégica e o discernimento que transformam capacidade tecnológica em decisão de negócio.
             </p>
             <blockquote className="text-2xl md:text-3xl font-light italic text-primary border-l-4 border-accent pl-6 my-12 bg-accent/5 py-6 rounded-r-lg">
               &ldquo;a verdadeira inovação surge quando tecnologia e humanidade trabalham em harmonia&rdquo;
             </blockquote>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              Com a <strong className="text-primary">10XMentorAI</strong>, complemento minha atuação em conselhos do futuro, preparando a alta liderança 
-              para exponencializar seus resultados através da Inteligência Artificial.
+              Atuo também como <strong className="text-primary">estrategista de negócios</strong>, oferecendo advisory de estratégia,
+              crescimento e transações à alta liderança. Contribuo na formulação estratégica, na agenda de crescimento e na
+              originação e estruturação de negócios e operações de M&amp;A — conectando lideranças a oportunidades e a capital,
+              com a disciplina de quem senta à mesa do conselho.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Já na <strong className="text-accent">imensIAH.com.br</strong>, plataforma que cofundei, unimos o melhor da IA com a profundidade da Inteligência Humana. 
@@ -216,7 +216,7 @@ export default function Home() {
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Pioneiro em IA para Governança no Brasil</li>
-                  <li>• Cofundador da 10XMentorAI & imensIAH</li>
+                  <li>• Cofundador da imensIAH</li>
                   <li>• AI Board Advisory para empresas</li>
                   <li>• Diagnósticos estratégicos com IA + IH</li>
                 </ul>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Renato de Faria e Almeida Prado",
   },
   description:
-    "Conselheiro do Futuro, Estrategista, AI Thinker, Cofundador 10XMentorAI & imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
+    "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
   keywords: [
     "NeoGovernança",
     "Governança Corporativa",
@@ -22,10 +22,12 @@ export const metadata: Metadata = {
     "IA Estratégica",
     "AI Board Advisory",
     "Estratégia Empresarial",
+    "Estratégia de Negócios",
+    "Advisory de Negócios",
+    "M&A",
     "Liderança",
     "ESG",
     "Sustentabilidade",
-    "10XMentorAI",
     "imensIAH",
     "Renato Almeida Prado",
   ],
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Renato de Faria e Almeida Prado",
     title: "Renato de Faria e Almeida Prado - Conselheiro do Futuro & AI Thinker",
     description:
-      "Conselheiro do Futuro, Estrategista, AI Thinker, Cofundador 10XMentorAI & imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
+      "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
     images: [
       {
         url: "/images/og-default.jpg",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Renato de Faria e Almeida Prado - Conselheiro do Futuro & AI Thinker",
     description:
-      "Conselheiro do Futuro, Estrategista, AI Thinker, Cofundador 10XMentorAI & imensIAH.",
+      "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH.",
     images: ["/images/og-default.jpg"],
   },
   robots: {
