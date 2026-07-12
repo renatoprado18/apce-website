@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -8,7 +8,12 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-family-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  --font-family-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -44,35 +49,35 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* PALETA FINAL: EXECUTIVO PREMIUM - Opção 2: Inovação Sustentável */
+/* PALETA: IDENTIDADE DO CARTÃO — Charcoal quente + Creme + Dourado */
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.98 0.005 0);
-  --foreground: oklch(0.25 0.02 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 0);
-  
-  /* Verde Petróleo como cor primária */
-  --primary: oklch(0.30 0.06 180); /* #0D4F4F - verde petróleo */
-  --primary-foreground: oklch(0.98 0 0);
-  
-  /* Dourado Suave como secundário */
-  --secondary: oklch(0.55 0.04 100); /* #86945F - dourado suave */
-  --secondary-foreground: oklch(0.98 0 0);
-  
-  --muted: oklch(0.96 0.005 0);
-  --muted-foreground: oklch(0.55 0.02 0);
-  
-  /* Verde Oliva como acento */
-  --accent: oklch(0.45 0.06 110); /* #5A6B3F - verde oliva */
-  --accent-foreground: oklch(0.98 0 0);
-  
+  --background: #f4efe7;        /* creme */
+  --foreground: #2a231d;        /* ink */
+  --card: #faf7f1;              /* creme card */
+  --card-foreground: #2a231d;
+  --popover: #faf7f1;
+  --popover-foreground: #2a231d;
+
+  /* Dourado como cor primária (accent/CTA/links) */
+  --primary: #c39553;           /* dourado */
+  --primary-foreground: #262019; /* charcoal sobre dourado */
+
+  /* Charcoal quente como superfície escura secundária (frente do cartão) */
+  --secondary: #262019;         /* charcoal quente */
+  --secondary-foreground: #f2ece0; /* creme sobre escuro */
+
+  --muted: #efe7db;             /* creme levemente mais fechado */
+  --muted-foreground: #8a7d72;  /* taupe */
+
+  /* Dourado também como acento */
+  --accent: #c39553;            /* dourado */
+  --accent-foreground: #262019;
+
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.005 180);
-  --input: oklch(0.92 0.005 180);
-  --ring: oklch(0.45 0.06 110);
+  --border: #e6ded0;            /* border creme */
+  --input: #e6ded0;
+  --ring: #c39553;              /* dourado */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -89,24 +94,24 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #262019;        /* charcoal quente */
+  --foreground: #f2ece0;        /* creme */
+  --card: #332b22;              /* charcoal soft */
+  --card-foreground: #f2ece0;
+  --popover: #332b22;
+  --popover-foreground: #f2ece0;
+  --primary: #c39553;           /* dourado */
+  --primary-foreground: #262019;
+  --secondary: #3a2f25;         /* superfície escura elevada */
+  --secondary-foreground: #f2ece0;
+  --muted: #3a2f25;
+  --muted-foreground: #c3b6a5;  /* taupe claro pra contraste no escuro */
+  --accent: #c39553;            /* dourado */
+  --accent-foreground: #262019;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: rgba(216, 198, 164, 0.18); /* moldura dourada sutil */
+  --input: rgba(242, 236, 224, 0.15);
+  --ring: #c39553;
   --chart-1: oklch(0.828 0.189 84.429);
   --chart-2: oklch(0.769 0.188 70.08);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -145,7 +150,13 @@
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
-  
+
+  /* Playfair Display (serif) nos títulos de display — como o nome no cartão */
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
   h1 {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
     font-weight: 800;
@@ -203,10 +214,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(107, 39, 55, 0.3);
+    box-shadow: 0 0 20px rgba(195, 149, 83, 0.35);
   }
   50% {
-    box-shadow: 0 0 40px rgba(107, 39, 55, 0.5);
+    box-shadow: 0 0 40px rgba(195, 149, 83, 0.55);
   }
 }
 
@@ -297,7 +308,7 @@
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(107, 39, 55, 0.4);
+  box-shadow: 0 0 30px rgba(195, 149, 83, 0.45);
 }
 
 /* ========== GLASSMORPHISM ========== */
@@ -345,16 +356,16 @@
 /* ========== GRADIENTES PREMIUM ========== */
 
 .gradient-primary {
-  background: linear-gradient(135deg, 
-    oklch(0.35 0.10 15) 0%, 
-    oklch(0.32 0.01 250) 100%
+  background: linear-gradient(135deg,
+    #262019 0%,
+    #332b22 100%
   );
 }
 
 .gradient-accent {
-  background: linear-gradient(135deg, 
-    oklch(0.70 0.10 75) 0%, 
-    oklch(0.60 0.08 70) 100%
+  background: linear-gradient(135deg,
+    #c39553 0%,
+    #a97f42 100%
   );
 }
 
@@ -391,7 +402,7 @@
 
 /* Focus states visíveis */
 *:focus-visible {
-  outline: 2px solid oklch(0.70 0.10 75);
+  outline: 2px solid #c39553;
   outline-offset: 2px;
 }
 

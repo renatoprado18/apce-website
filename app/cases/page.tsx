@@ -13,7 +13,7 @@ export default function Cases() {
       <Header />
 
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-white py-20 pt-32">
+      <section className="bg-gradient-to-br from-[#262019] via-[#2b241c] to-[#332b22] text-white py-20 pt-32">
         <div className="container px-4">
           <Link href="/">
             <Button variant="ghost" className="text-white hover:bg-white/10 mb-8">
@@ -146,7 +146,7 @@ export default function Cases() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-primary via-primary/90 to-secondary text-white">
+      <section className="py-16 bg-gradient-to-br from-[#262019] via-[#2b241c] to-[#332b22] text-white">
         <div className="container px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Quer transformar sua organização?
@@ -156,7 +156,7 @@ export default function Cases() {
           </p>
           <Button 
             size="lg" 
-            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
             asChild
           >
             <Link href="/#contato">

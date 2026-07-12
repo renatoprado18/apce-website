@@ -20,7 +20,7 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm shadow-sm border-b border-primary/30">
       <div className="container px-4 py-4 flex items-center justify-between">
         <Link href="/" onClick={closeMenu}>
           <img
@@ -71,7 +71,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-card border-t border-border">
           <nav className="container px-4 py-4 flex flex-col gap-2">
             {navLinks.map((link) =>
               link.href.startsWith("/#") ? (

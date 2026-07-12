@@ -4,7 +4,7 @@ import { Home, ArrowLeft, BookOpen, Search } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary via-primary/90 to-secondary flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#262019] via-[#2b241c] to-[#332b22] flex items-center justify-center px-4">
       <div className="text-center text-white max-w-2xl">
         <h1 className="text-9xl font-bold mb-4 opacity-20">404</h1>
         <h2 className="text-4xl md:text-5xl font-bold mb-6 -mt-16">
@@ -18,7 +18,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button
             size="lg"
-            className="bg-white text-primary hover:bg-white/90"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
             asChild
           >
             <Link href="/">

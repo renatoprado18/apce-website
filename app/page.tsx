@@ -51,7 +51,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-primary via-primary/90 to-secondary overflow-hidden pt-20">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-[#262019] via-[#2b241c] to-[#332b22] overflow-hidden pt-20">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00em0wIDI0YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00ek0xMiAyOGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHptMjQgMGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHptMjQgMGMwLTIuMjA5LTEuNzkxLTQtNC00cy00IDEuNzkxLTQgNCAxLjc5MSA0IDQgNCA0LTEuNzkxIDQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
         
         <div className="container relative z-10 text-center text-white px-4">
@@ -67,17 +67,17 @@ export default function Home() {
             para preparar líderes e aconselhar empresas a crescerem com sustentabilidade, humanidade e inteligência.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 hover-lift elevation-2 text-lg px-8 py-6 font-semibold"
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 hover-lift elevation-2 text-lg px-8 py-6 font-semibold"
               onClick={scrollToContact}
             >
               Agende uma Conversa
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 border-2 border-white text-lg px-8 py-6"
+            <Button
+              size="lg"
+              className="bg-transparent text-white hover:bg-white/10 border-2 border-primary/70 text-lg px-8 py-6"
               asChild
             >
               <a href="https://www.linkedin.com/in/renatoaprado/" target="_blank" rel="noopener noreferrer">
@@ -577,7 +577,7 @@ export default function Home() {
       </section>
 
       {/* Contato */}
-      <section id="contato" className="py-24 bg-gradient-to-br from-primary via-primary/90 to-secondary text-white fade-in-section">
+      <section id="contato" className="py-24 bg-gradient-to-br from-[#262019] via-[#2b241c] to-[#332b22] text-white fade-in-section">
         <div className="container px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
@@ -623,7 +623,7 @@ export default function Home() {
 
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
               asChild
             >
               <a href="mailto:renato@almeida-prado.com">
@@ -654,24 +654,24 @@ export default function Home() {
       </a>
 
       {/* Footer */}
-      <footer className="py-8 bg-secondary text-white/80">
+      <footer className="py-8 bg-secondary text-white/80 border-t-2 border-primary/40">
         <div className="container px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm">
+            <p className="text-sm font-mono">
               © {new Date().getFullYear()} Renato de Faria e Almeida Prado. Todos os direitos reservados.
             </p>
-            <div className="flex gap-6">
-              <a 
-                href="https://www.linkedin.com/in/renatoaprado/" 
-                target="_blank" 
+            <div className="flex gap-6 font-mono text-sm">
+              <a
+                href="https://www.linkedin.com/in/renatoaprado/"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 LinkedIn
               </a>
-              <a 
+              <a
                 href="mailto:renato@almeida-prado.com"
-                className="hover:text-white transition-colors"
+                className="hover:text-primary transition-colors"
               >
                 Email
               </a>
