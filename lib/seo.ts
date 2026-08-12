@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 const baseUrl = 'https://almeida-prado.com'
 const siteName = 'Renato de Faria e Almeida Prado'
-const defaultDescription = 'Conselheiro do Futuro, Estrategista de Negócios, AI Thinker. Especialista em NeoGovernança, IA e Estratégia Empresarial. Cofundador imensIAH.'
+const defaultDescription = 'Entro em empresa familiar que está com uma decisão parada e faço a decisão andar, sem virar o executivo dela. Conselheiro certificado IBGC. M&A e integração pós-aquisição.'
 
 export interface SEOProps {
   title: string
@@ -112,7 +112,7 @@ export function generateArticleJsonLd(article: {
       '@type': 'Person',
       name: article.author,
       url: baseUrl,
-      jobTitle: 'Conselheiro do Futuro, AI Thinker',
+      jobTitle: 'Conselheiro de empresa familiar em transição',
       sameAs: [
         'https://www.linkedin.com/in/renatoaprado/',
       ],
@@ -141,7 +141,7 @@ export function generatePersonJsonLd() {
     name: 'Renato de Faria e Almeida Prado',
     url: baseUrl,
     image: `${baseUrl}/images/renato-photo.jpg`,
-    jobTitle: 'Conselheiro do Futuro, Estrategista de Negócios, AI Thinker',
+    jobTitle: 'Conselheiro de empresa familiar em transição',
     description: defaultDescription,
     sameAs: [
       'https://www.linkedin.com/in/renatoaprado/',
