@@ -59,12 +59,13 @@ export default function Home() {
             Renato de Faria e Almeida Prado
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light max-w-4xl mx-auto animate-fade-in-up animation-delay-200">
-            Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH
+            Conselheiro de empresa familiar em transição
           </p>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-400">
-            Com quase 30 anos de trajetória empreendedora, participação em conselhos, inovação e liderança com propósito, 
-            combino inteligência artificial generativa com décadas de experiência em alta gestão 
-            para preparar líderes e aconselhar empresas a crescerem com sustentabilidade, humanidade e inteligência.
+            Entro em empresa familiar que está com uma decisão parada e faço a decisão andar, sem virar o executivo dela.
+            Fundei a Natique em 1996, fui CEO por doze anos e permaneci como sócio até vender a companhia à Osborne,
+            multinacional familiar espanhola fundada em 1772. Depois da venda fiquei no conselho de administração da
+            empresa que eu mesmo havia dirigido, de 2013 a 2017. A Natique cresceu 115% em receita nesse período.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-600">
             <Button
@@ -190,8 +191,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Já na <strong className="text-accent">imensIAH.com.br</strong>, plataforma que cofundei, unimos o melhor da IA com a profundidade da Inteligência Humana. 
               Oferecemos diagnósticos estratégicos completos — análise SWOT, insights PESTEL e recomendações prioritárias com OKRs — 
-              transformando dados empresariais em decisões que realmente fazem a diferença. Uma extensão natural da minha atuação como Conselheiro do Futuro, 
-              aplicando IA com sabedoria estratégica.
+              transformando dados empresariais em decisões que realmente fazem a diferença. Uma extensão natural do mecanismo que levo ao conselho.
             </p>
               </div>
             </div>
@@ -211,14 +211,14 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Brain className="h-9 w-9 text-primary group-hover:scale-110 transition-transform" />
                 </div>
-                <CardTitle className="text-xl">IA na Alta Liderança</CardTitle>
+                <CardTitle className="text-xl">Cadência de conselho</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Pioneiro em IA para Governança no Brasil</li>
-                  <li>• Cofundador da imensIAH</li>
-                  <li>• AI Board Advisory para empresas</li>
-                  <li>• Diagnósticos estratégicos com IA + IH</li>
+                  <li>• Cada decisão com responsável, prazo e estado visível</li>
+                  <li>• Acompanhamento semanal entre as reuniões</li>
+                  <li>• Num dos conselhos: 62 decisões rastreadas, 52 concluídas</li>
+                  <li>• 5 das 62 sob minha responsabilidade direta</li>
                 </ul>
               </CardContent>
             </Card>
@@ -232,7 +232,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• +115% crescimento em portfólio</li>
+                  <li>• A Natique cresceu 115% em receita entre 2013 e 2017</li>
                   <li>• M&A, Valuation e Modelagem Financeira</li>
                   <li>• Mentor para líderes e executivos</li>
                 </ul>
@@ -264,7 +264,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• TOP 4% B-Corp Global (Best for the World 2021/2022)</li>
+                  <li>• Certificação B Corp e prêmio Best for the World, 2021 e 2022, categoria Trabalhadores</li>
                   <li>• +150 pessoas em vulnerabilidade incluídas no mercado tech</li>
                   <li>• Impacto social + tecnologia</li>
                 </ul>
@@ -302,10 +302,10 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-accent" />
                   <CardTitle className="text-2xl">Conselhos Consultivos</CardTitle>
                 </div>
-                <CardDescription className="text-lg">Múltiplas organizações | 2024 – Presente</CardDescription>
+                <CardDescription className="text-lg">Vallen Clinic, Alba Consultoria, ASSESPRO-SP | 2024 – Presente</CardDescription>
               </CardHeader>
               <CardContent className="text-muted-foreground">
-                <p>ASSESPRO-SP, Alba Consultoria, Board Academy (Presidente da Comissão do Conselho Consultivo do Futuro), entre outros</p>
+                <p>Vallen Clinic (desde janeiro de 2025) e Alba Consultoria (desde dezembro de 2024), conselhos consultivos. Na Federação ASSESPRO-SP, vice-presidente do conselho consultivo e diretor de Governança. Conselheiro consultivo voluntário na Associação Despertar.</p>
               </CardContent>
             </Card>
 
@@ -318,7 +318,7 @@ export default function Home() {
                 <CardDescription className="text-lg">Carambola, Natique, Suriana | 1996 – 2023</CardDescription>
               </CardHeader>
               <CardContent className="text-muted-foreground">
-                <p className="font-semibold text-accent mb-2">B-Corp TOP 4% Global (Best for the World 2021/2022)</p>
+                <p className="font-semibold text-accent mb-2">Certificação B Corp · prêmio Best for the World, 2021 e 2022</p>
                 <p>Fundador e CEO de múltiplas empresas de tecnologia, alimentos e serviços com foco em impacto social e inovação</p>
               </CardContent>
             </Card>
@@ -342,9 +342,9 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-3 text-muted-foreground">
-                <p>• Conselheiro Administração – IBGC (2024)</p>
-                <p>• AI on Board – Board Academy (2024)</p>
-                <p>• AI Applications – University of Pennsylvania (2023)</p>
+                <p>• Conselheiro de Administração – IBGC (agosto 2024)</p>
+                <p>• AI on Board – Board Academy (janeiro 2023)</p>
+                <p>• AI Applications – University of Pennsylvania (dezembro 2023)</p>
               </CardContent>
             </Card>
 
@@ -356,8 +356,8 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-3 text-muted-foreground">
-                <p>• MBA – UCLA Anderson School of Management</p>
-                <p>• Engenharia de Produção – USP</p>
+                <p>• Global Executive MBA for the Americas – UCLA Anderson (2014)</p>
+                <p>• Engenharia de Produção – Escola Politécnica da USP (2001)</p>
                 <p>• Direito – Mackenzie</p>
               </CardContent>
             </Card>
@@ -386,10 +386,10 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-4 text-primary">IA & Tecnologia</h3>
               <div className="flex flex-wrap gap-3">
-                <Badge variant="secondary" className="text-base py-2 px-4">Inteligência Artificial</Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">IA Generativa</Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">AI Board Advisory</Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">Transformação Digital</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">Sucessão familiar</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">Reorganização societária</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">Entrada e saída de sócio</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">M&amp;A e integração pós-aquisição</Badge>
               </div>
             </div>
 
@@ -407,7 +407,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-4 text-primary">ESG & Impacto</h3>
               <div className="flex flex-wrap gap-3">
                 <Badge variant="secondary" className="text-base py-2 px-4">ESG</Badge>
-                <Badge variant="secondary" className="text-base py-2 px-4">B-Corp</Badge>
+                <Badge variant="secondary" className="text-base py-2 px-4">B Corp</Badge>
                 <Badge variant="secondary" className="text-base py-2 px-4">Sustentabilidade</Badge>
                 <Badge variant="secondary" className="text-base py-2 px-4">Impacto Social</Badge>
               </div>
