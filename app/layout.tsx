@@ -8,19 +8,19 @@ const baseUrl = "https://almeida-prado.com";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Renato de Faria e Almeida Prado - Conselheiro do Futuro & AI Thinker",
+    default: "Renato de Faria e Almeida Prado - Conselheiro de empresa familiar em transição",
     template: "%s | Renato de Faria e Almeida Prado",
   },
   description:
-    "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
+    "Entro em empresa familiar que está com uma decisão parada e faço a decisão andar, sem virar o executivo dela. Conselheiro certificado IBGC. M&A e integração pós-aquisição.",
   keywords: [
     "NeoGovernança",
     "Governança Corporativa",
     "Conselho de Administração",
     "Conselheiro",
-    "Inteligência Artificial",
-    "IA Estratégica",
-    "AI Board Advisory",
+    "Empresa familiar",
+    "Sucessão familiar",
+    "Reorganização societária",
     "Estratégia Empresarial",
     "Estratégia de Negócios",
     "Advisory de Negócios",
@@ -44,23 +44,23 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: baseUrl,
     siteName: "Renato de Faria e Almeida Prado",
-    title: "Renato de Faria e Almeida Prado - Conselheiro do Futuro & AI Thinker",
+    title: "Renato de Faria e Almeida Prado - Conselheiro de empresa familiar em transição",
     description:
-      "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH. Especialista em NeoGovernança, IA e Estratégia Empresarial.",
+      "Entro em empresa familiar que está com uma decisão parada e faço a decisão andar, sem virar o executivo dela. Conselheiro certificado IBGC. M&A e integração pós-aquisição.",
     images: [
       {
         url: "/images/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Renato de Faria e Almeida Prado - Conselheiro do Futuro",
+        alt: "Renato de Faria e Almeida Prado - Conselheiro de empresa familiar em transição",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Renato de Faria e Almeida Prado - Conselheiro do Futuro & AI Thinker",
+    title: "Renato de Faria e Almeida Prado - Conselheiro de empresa familiar em transição",
     description:
-      "Conselheiro do Futuro, Estrategista de Negócios, AI Thinker, Cofundador imensIAH.",
+      "Entro em empresa familiar que está com uma decisão parada e faço a decisão andar, sem virar o executivo dela. Conselheiro certificado IBGC. M&A e integração pós-aquisição.",
     images: ["/images/og-default.jpg"],
   },
   robots: {
