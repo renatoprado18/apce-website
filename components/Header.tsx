@@ -11,13 +11,10 @@ export function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-  const navLinks = [
-    { href: "/", label: "Início" },
-    { href: "/neogovernanca", label: "NeoGovernança" },
-    { href: "/cases", label: "Cases" },
-    { href: "/blog", label: "Blog" },
-    { href: "/#contato", label: "Contato" },
-  ];
+  // Menu reduzido em 12/08/2026: o site deixou de ser vitrine e virou cartao.
+  // /neogovernanca, /cases e /blog seguem NO AR e indexaveis — so nao aparecem
+  // no menu. Nenhuma URL quebrou; e reversivel devolvendo as linhas abaixo.
+  const navLinks: { href: string; label: string }[] = [];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-sm shadow-sm border-b border-primary/40">
