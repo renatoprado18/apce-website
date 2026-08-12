@@ -13,12 +13,7 @@ export default function Home() {
             Renato de Faria e Almeida Prado
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-xl">
-            Entro em empresa familiar que está com uma decisão parada e faço a
-            decisão andar, sem virar o executivo dela.
-          </p>
-
-          <div className="h-px w-16 bg-primary mb-10" />
+          <div className="h-px w-16 bg-primary mt-8 mb-10" />
 
           <div className="flex flex-col gap-5">
             <a
